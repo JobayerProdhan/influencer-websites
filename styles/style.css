@@ -169,7 +169,44 @@ ul>li a:hover{
     color: #E02C6D;
 }
 
+/* join now styles  */
+.join-now{
+    display: flex;
+    gap: 30px;
+    margin-top: 100px;
+    text-align: left;
+    align-items: center;
+}
 
+.join-now-text{
+    /* margin-top: 10px; */
+    padding-bottom: 20px;
+}
+
+.join-now-text h2{
+    color:#0f0c38 ;
+    font-size: 2.2rem;
+}
+.join-now-text p{
+    color: #6C6C6C;
+}
+.join-now-btn{
+    background-color: #E02C6D;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    width: 12.25rem;
+    height: 2.9rem;
+    font-weight: bold;
+    transition: background .3s ease;
+}
+
+.join-now-btn:hover{
+    background-color: white;
+    color: #E02C6D;
+    border: 1px solid #E02C6D;
+    transform: scale(1.05);
+}
 
 
 
@@ -207,6 +244,9 @@ ul>li a:hover{
         padding: 0px;
     }
     nav{
+        flex-direction: column;
+    }
+    nav>ul{
         flex-direction: column;
     }
     .banner{
@@ -260,5 +300,12 @@ ul>li a:hover{
     }
     .card img{
         width: calc(100% - 30px);
+    }
+
+    .join-now{
+        flex-direction: column-reverse;
+    }
+    .join-now-text{
+        text-align: center;
     }
 }
